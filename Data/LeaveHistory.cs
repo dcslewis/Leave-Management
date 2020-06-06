@@ -11,7 +11,7 @@ namespace Leave_Management.Data
     {
         [Key]
         public int Id { get; set; }
-        [ForeignKey("RequestingEmployee")]
+        [ForeignKey("RequestingEmployeeId")]
         public Employee RequestingEmployee { get; set; }
         public string RequestingEmployeeId { get; set; }
         public DateTime StartDate { get; set; }
